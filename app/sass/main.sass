@@ -1,0 +1,942 @@
+@import '_normalize.sass'
+body
+	font-family: "Roboto", Arial, sans-serif
+a 
+	text-decoration: none
+.head
+	max-width: 640px
+	margin: 0  auto	
+	border-bottom: 2px solid #cccccc
+.head_img
+	max-width: 100%
+	width: 100%	
+.head_img_block
+	background: #131410
+	width: 100%
+	position: relative
+.container
+	width: 100%	
+	position: relative
+	margin-right: auto
+	margin-left: auto
+.nav_cont
+	font-family: 'Roboto Condensed', sans-serif
+	font-size: 26px
+	line-height: 2
+	color: #fff	
+.main_nav
+	position: absolute
+	z-index: 10
+	width: 100% 
+	max-height: 0
+	opacity: 0
+	background-color: #000
+	overflow: hidden
+.main_nav.active
+	max-height: inherit
+	opacity: 1
+	transition: all 0.5s ease
+.greeting_usr
+	padding: 75px 88px
+	display: flex
+	border-bottom: 1px solid #666
+.greeting_usr span
+	display: block
+	padding-top: 30px
+	padding-left: 40px
+.nav_cont ul
+	list-style: none
+	padding-left: 88px
+.nav_cont ul a
+	color: #fff
+.nav_cont li:first-of-type
+	font-family: 'Roboto Slab', serif
+	font-weight: bold
+	text-transform: uppercase				
+.post_header
+	display: flex
+	height: 90px
+	box-sizing: border-box
+	align-items: center
+.menu_btn
+	flex-shrink: 0
+	width: 100px
+	height: 90px
+	background: none
+	border: none
+	position: relative
+	padding: 0
+.menu_btn.active
+	background: #000
+	transition: all 0.5s ease
+.menu_btn.active span
+	background: #666
+	transition: all 0.5s ease		
+.menu_btn span
+	display: block
+	background: #000
+	height: 3px
+	width: 60px
+	position: absolute
+	left: 20px
+	transition: all 0.5s ease
+.menu_btn span:nth-child(1)
+	top: 30px
+.menu_btn span:nth-child(2)
+	top: 39px
+.menu_btn span:nth-child(3)
+	top: 48px			
+.transparent
+	opacity: 0
+.menu_btn span.rotate-top
+	transform: rotatez(-50deg)
+	top: 40px
+	left: 15px
+.menu_btn span.rotate-bottom
+	transform: rotatez(45deg)
+	left: 15px
+	top: 40px			
+.logo
+	width: 185px
+	flex: 1
+.logo img
+	max-width: 100%	
+	margin: 0 auto
+	display: block
+.btn
+	background-color: #fff
+	border: none
+	padding: 0
+	flex-shrink: 0
+	padding-right: 15px
+.enter
+	display: none
+	margin-right: 45px	
+.search img
+	width: 100%
+.main 
+	max-width: 640px
+	margin: 0  auto	
+.main_section
+	padding: 0 15px 0
+	margin: 0  auto	
+	margin-top: 20px 
+	display: flex
+.main_block
+	width: 100%	
+.preview_top
+	height: 414px	
+.preview 
+	background-position: center top 
+	background-size: cover
+	position: relative
+.preview_top:before	
+	position: absolute
+	top: 0
+	left: 0
+	content: ' '
+	width: 100%
+	height: 100%
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 20%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.9) 100%)
+.preview_link
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+.preview_info
+	padding: 0 49px
+	position: absolute
+	width: 100%
+	bottom: 45px
+	z-index: 2
+	box-sizing: border-box
+.rubric
+	color: #a4a4a4
+	font-family: 'Roboto Slab', serif
+	font-size: 24px
+	position: relative
+	font-weight: bold
+	text-transform: uppercase
+	margin-bottom: 10px
+.rubric a	
+	color: #a4a4a4
+.preview_rubric
+	margin-bottom: 15px	
+.rubric:after
+	position: absolute
+	content: ' '
+	width: 20px
+	height: 1px
+	bottom: -4px
+	left: 0
+	background-color: #fff	
+.preview_title a
+	color: #fff
+	font-family: 'PT Sans Narrow', sans-serif
+	font-weight: bold
+	font-size: 60px
+	text-transform: uppercase
+	line-height: 40px
+.preview_description a
+	color: #fff
+	font-family: 'PT Sans', sans-serif
+	font-size: 32px
+	line-height: 36px
+
+.main_category
+	display: flex
+	flex-direction: column
+	width: 100%	
+	margin-top: 27px
+.aside_block
+	display: none		
+.category
+	height: 150px
+	font-family: 'Roboto Slab', serif
+	font-weight: bold
+	font-size: 36px
+	color: #fff
+	display: flex
+	align-items: center
+	justify-content: center
+	text-transform: uppercase
+.category:hover
+	outline: 4px solid #fff
+	outline-offset: -10px
+	transition: .3s all ease	
+.cat1
+	background: url('../img/category1.jpg') no-repeat
+.cat2
+	background: url('../img/category2.jpg') no-repeat
+	margin: 5px 0
+.cat3
+	background: url('../img/category3.jpg') no-repeat
+.special
+	margin-top: 20px
+	display: none
+.special_link
+	font-family: "Roboto Condensed",  sans-serif
+	font-size: 18px	
+	color: #000
+.special_link:before
+	content: ' '
+	width: 30px
+	height: 30px
+	background: #000 url('../img/Icon_zayac_white.png') center no-repeat
+	border-radius: 50%	
+	display: inline-block
+	vertical-align: middle
+	margin: 5px 10px
+.row_content
+	margin-top: 40px	
+.popular_block
+	padding: 0 50px
+	margin-bottom: 50px	
+.popular_block strong
+	font-family: 'Roboto Slab', serif
+	font-size: 30px
+	margin-bottom: 10px
+	display: block
+.popular_block ul
+	list-style: none
+	margin: 0
+	padding: 0
+.popular_item
+	font-family: 'Roboto Condensed', sans-serif
+	font-size: 32px
+	padding: 10px 0	
+.popular_item a	
+	color: #000
+.popular_item a:hover 
+	color: #ff0044
+.video_block
+	background: #000
+	height: 420px
+	padding-top: 36px
+	box-sizing: border-box
+	width: 100%	
+.video
+	height: 350px
+.video:before
+	position: absolute
+	top: 0
+	left: 0
+	content: ' '
+	background: #000
+	opacity: 0.4
+	width: 100%
+	height: 100%
+.video_link
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+.play_btn
+	background: none
+	border: none
+	margin-bottom: 20px
+.video_info
+	padding: 0 50px
+.video_rubric:after
+	position: absolute
+	content: ' '
+	width: 20px
+	height: 1px
+	bottom: -4px
+	left: 0
+	background-color: #fff
+.video_title
+	color: #fff
+	font-family: 'PT Sans Narrow', sans-serif
+	font-size: 30px
+	line-height: 1
+.video_title strong
+	font-size: 60px	
+.items
+	padding: 0 60px 
+	border-bottom: 1px solid #cccccc
+	margin: 25px 0
+	position: relative
+	left: -15px
+	width: calc(100% + 30px)
+	box-sizing: border-box
+.item
+	display: flex
+.item_img
+	display: block
+	overflow: hidden
+	width: 143px
+	height: 115px
+	flex: none
+.item_img img
+	display: block
+	width: 100%	
+	height: auto	
+.item_info
+	margin-left: 24px
+.item_rubric:after
+	background-color: #000
+.item_description a
+	font-family: 'Roboto Condensed', sans-serif	
+	font-size: 32px
+	line-height: 36px
+	color: #000
+.item_description
+	margin-bottom: 25px		
+.photos_block
+	padding: 0 15px 20px
+	border-bottom: 1px solid #ccc
+	margin-top: 15px
+	position: relative
+	left: -15px
+	width: calc(100% + 30px)
+	box-sizing: border-box
+.photos
+	height: 855px
+.photos:before	
+	position: absolute
+	left: 0
+	top: 0
+	content: ' '
+	width: 100%
+	height: 100%
+	background: linear-gradient(to bottom, rgba(32,32,32,0.4) 0%,rgba(32,32,32,0.51) 50%,rgba(32,32,32,1) 100%)
+.photos_count
+	position: absolute
+	top: 40px
+	left: 50px
+	color: #fff
+.photos_count b
+	display: block
+	font-family: 'Roboto Slab', serif
+	font-size: 57px
+	font-weight: 300
+	line-height: 1
+.photos_count span
+	font-family: 'Roboto Condensed', sans-serif
+	text-transform: uppercase
+	font-size: 24px
+	line-height: 1
+	font-weight: 300
+.photos_rubric:after
+	background-color: #ff0044
+.photos_title a	
+	font-family: 'Roboto Condensed', sans-serif
+	font-size: 32px
+	font-weight: bold
+	color: #fff	
+.video_card
+	background-color: #000	
+.video_min
+	width: 145px	
+	height: 82px
+	position: relative
+	margin-top: 15px
+	flex: none
+.min_video_preview
+	width: 100%
+	height: 100%
+	display: block
+	overflow: hidden
+.min_video_preview img	
+	display: block
+	width: 100%
+	height: auto
+.video_min .play_btn
+	position: absolute
+	margin: 0
+	left: 25%
+.video_min_rubric:after
+	background-color: #ff0044	
+.video_card .item_description a
+	color: #fff
+.news_item > a
+	display: none	
+.play_cover
+	margin: 25px 0
+.play_cover img	
+	width: 100%
+.items.gadget
+	border-top: 4px solid #000
+	border-bottom: 4px solid #000
+	padding-top: 25px
+	padding-bottom: 30px
+.gadget .item_description a
+	font-weight: bold
+.show_more
+	width: 100%
+	font-family: 'Roboto Condensed', sans-serif
+	font-size: 32px	
+	line-height: 18px
+	height: 170px
+	background: none
+	border: none
+	padding-bottom: 90px
+.ad_block
+	display: none	
+.footer
+	background: #000
+	padding: 40px 0
+.footer_container
+	margin: 0 auto
+.footer_left
+	width: 100%	
+.footer_right
+	width: 100%	
+.footer_block
+	display: flex
+	flex-wrap: wrap
+.footer_logo
+	margin: 0 auto
+	max-width: 50px
+.second_logo
+	display: none	
+.footer_navigation
+	display: none
+	margin-top: 30px
+.footer_navigation ul
+	padding: 0
+	margin:	0
+	margin-right: 30px
+.footer_navigation ul li a
+	color: #fff
+	font-family: 'Roboto Condensed', sans-serif
+	font-size: 16px
+	line-height: 1.5	
+.footer_text
+	font-family: 'Roboto', sans-serif
+	font-size: 20px
+	color: #666	
+	margin: 40px 65px
+	line-height: 24px
+	border-top: 3px solid #666
+	border-bottom: 3px solid #666
+	padding-top: 17px
+	padding-bottom: 25px
+.footer_text p
+	margin: 0
+	padding: 0
+.footer_socials
+	display: flex
+	align-items: center	
+.footer_social
+	margin: 0 auto
+	margin-bottom: 70px
+.footer_social a:not(:first-of-type)
+	margin-left: 50px
+.footer_link
+	display: flex
+	margin: 0 auto
+	width: 300px
+.footer_link div
+	background: #333333	
+	color: #fff
+	padding: 18px 77px 18px 18px	
+	box-sizing: border-box
+	font-family: 'Roboto', sans-serif
+	font-size: 18px
+	width: 226px
+.footer_left .footer_age,
+.footer_left .footer_copyright
+	display: none	
+.footer_journal
+	display: none	
+.footer_age
+	width: 75px
+	height: 75px
+	margin: auto
+	margin-top: 35px
+	margin-bottom: 20px
+	color: #ff0044
+	font-family: 'Roboto Condensed', sans-serif
+	font-size: 24px
+	text-align: center
+	border: 1px solid #ff0044
+	line-height: 70px
+	box-sizing: border-box	
+.footer_copyright
+	margin: 0
+	padding: 0
+	color: #666
+	font-family: 'Roboto', sans-serif
+	font-size: 18px	
+	text-align: center
+.footer_copyright a
+	color: #666
+	text-decoration: underline
+.sub_block
+	display: none
+.widget_block
+	display: none								
+@media screen and (min-width: 1024px)	
+	.head
+		max-width: 1024px
+		margin: 0  auto
+	.container
+		width: 1024px	
+	.enter
+		display: block	
+	.head_img_block
+		width: 100%
+		
+	.menu_btn
+		margin-right: 50px
+	.aside_block
+		display: none	
+	.rubric
+		font-size: 14px		
+	.main
+		max-width: 1024px
+		margin: 0  auto	
+	.preview
+		height: 420px
+	.main_block
+		width: 940px
+		margin: 0 auto
+	.preview_info
+		padding: 0 20px
+		bottom: 35px	
+	.preview_title a
+		font-size: 48px
+	.preview_description a
+		font-size: 18px
+		line-height: 24px
+	.category
+		width: 300px
+		height: 90px
+		font-size: 24px	
+	.main_category
+		flex-direction: row	
+		justify-content: space-between
+		margin-top: 40px 
+	.nav
+		display: flex
+		flex-wrap: wrap	
+	.cat2
+		margin: 0
+	.cat1, .cat2, .cat3
+		background-size: cover
+		background-position: center
+	.special
+		display: block
+	.row_content
+		display: flex
+		flex-wrap: wrap
+	.popular_block
+		border:  2px solid #000
+		padding: 30px 30px
+		box-sizing: border-box
+		width: 300px
+		height: 420px
+		margin: 0 20px 0 0
+	.popular_block strong
+		font-size: 18px
+	.popular_item
+		font-size: 18px	
+	.video_block
+		width: 620px
+	.video
+		height: 350px
+	.left_col
+		display: flex	
+		flex-wrap: wrap
+		width: 640px
+	.right_col
+		width: 300px
+		height: 1740px
+		margin-top: 20px
+	.right_col .ad_block
+		display: block	
+	.sticky 
+		position: sticky
+		top: 10px
+	.items
+		margin: 0
+		width: 300px
+		border: none
+		margin-right: 20px	
+		padding: 0
+		left: 0
+		margin-top: 20px
+	.item
+		display: block	
+	.item_img
+		width: 300px
+		height: 240px
+		margin-bottom: 20px
+	.item_info
+		margin: 0
+	.item_description a
+		font-size: 30px
+		line-height: normal	
+	.photos_block
+		border: none
+	.first_photos_block
+		display: none	
+	.advice
+		width: 620px
+		border: 1px solid #cdcdcd
+		padding: 19px 0 0 23px 
+		margin-bottom: 0
+	.advice a
+		font-size: 18px	
+	.video_card
+		height: 420px
+	.video_min
+		height: 168px
+		width: 300px
+		margin-top: 37px
+	.video_card .item_info
+		margin: 55px 21px
+	.video_min .play_btn
+		left: 120px
+		top: 60px	
+	.items:nth-child(7), 
+	.photos_block:nth-child(3)
+		display: none
+	.news
+		width: 620px
+		border-top: 1px solid #ccc
+		border-bottom: 1px solid #ccc
+		padding: 20px 0
+	.news_items
+		display: flex
+	.news_item
+	 	display: flex
+	 	width: 300px
+	 	height: 87px
+	 	margin-right: 20px
+	.news_item > a	
+		display: block
+	.news_item .item_description
+		margin: 0	
+		padding: 0 10px 0 15px
+	.news_item .item_description a
+		font-size: 24px	
+	.news_item:last-child
+		display: none
+	.photos_block
+		width: 300px
+		height: 420px
+		margin-top: 20px
+		padding: 0
+		left: 0
+		margin-right: 20px
+	.photos_count
+		top: 20px
+		left: 20px
+	.photos_count b
+		font-size: 30px
+	.photos_count span
+		font-size: 14px
+	.photos_title a	
+		font-size: 30px	
+	.play_cover
+		width: 300px
+		margin-top: 20px
+		margin-right: 20px
+	.gadget
+		display: none
+	.show_more
+		width: 620px
+		font-size: 30px
+		padding-top: 20px
+	.sub_block
+		width: 300px
+		margin-top: 20px
+		padding: 20px
+		box-sizing: border-box
+		background: #ececec
+		font-family: 'Roboto Condensed', sans-serif
+		font-size: 18px
+		line-height: 24px
+		top: 10px
+		display: block
+	.sub_text strong
+		text-transform: uppercase
+		display: block
+	.email_sub
+		display: flex
+		margin-top: 13px	
+	.email
+		padding: 11.5px 11px
+		border: none
+	.btn_sub
+		background: url('../img/Btn_dd_list.jpg')
+		border: none
+		width: 45px
+		height: 45px
+	.ad_block
+		margin-top: 20px
+	.ad_block:first-child
+		margin: 0	
+	.widget_block
+		width: 940px
+		display: flex
+		margin-bottom: 35px
+	.widg
+		width: 300px
+		height: 240px
+		border: 1px solid #cccccc
+	.inst_widg
+		position: relative
+		width: 300px
+		height: 240px
+		margin: 0 auto		
+	.thumbnails
+		display: flex
+		width: 300px
+	.item
+		display: block
+	.big
+		width: 150px
+		height: 150px
+	.small_items
+		display: flex
+		flex-wrap: wrap	
+	.small
+		width: 75px
+		height: 75px
+	.inst_info
+		position: absolute
+		top: 130px
+		left: 13px
+
+	.inst_info .profile
+		float: left
+		margin-right: 14px
+		width: 75px
+	.inst_widg_head 
+		color: #fff
+		margin: 0
+		font-size: 16px	
+		font-weight: bold
+		margin-bottom: 12px
+	.inst_widg_head a
+		color: #fff	
+	.inst_info .counters.media
+		width: 75px
+	.inst_info .counters
+		display: inline-block
+		font-size: 11px
+		line-height: 1
+	.inst_info .counters strong
+		font-size: 18px
+		display: block
+		line-height: 1
+	.inst_info .subscribe
+		background: #00af41
+		color: #fff
+		display: inline-block
+		width: 95px
+		height: 22px
+		padding: 4px
+		font-size: 12px
+		text-align: center
+		margin-left: 75px
+		margin-top: 13px
+		box-sizing: border-box	
+	.footer_container
+		width: 940px
+	.footer_logo
+		margin: 0	
+	.footer .footer_logo .first_logo
+		display: none
+	.footer .footer_logo .second_logo
+		display: block	
+	.footer_navigation
+		display: flex
+	.footer_left
+		max-width: 670px
+		margin-right: 70px
+	.footer_right
+		max-width: 180px
+	.footer_text
+		margin: 0
+		font-size: 12px
+		line-height: 18px
+	.footer_right .footer_copyright,
+	.footer_right .footer_age
+		display: none
+	.footer_journal	
+		width: 177px
+		margin: 0 auto	
+		text-align: center
+		display: block
+	.footer_journal_wrap
+		position: relative
+		padding-top: 40px
+	.footer_journal_wrap:before
+		position: absolute
+		top: 0
+		left: -22px
+		content: ''
+		z-index: 10
+		width: 220px
+		height: 62px
+		background: url('../img/journal_head.png')
+	.footer_journal_title
+		position: absolute
+		top: 11px
+		right: 0
+		left: 0
+		z-index: 40
+		color: #fff
+		font-family: 'Roboto Condensed', sans-serif
+		font-size: 18px
+		text-transform: uppercase
+	.footer_journal_wrap:after
+		position: absolute
+		bottom: -7px
+		left: -13px
+		content: ''
+		z-index: 10
+		width: 36px
+		height: 39px
+		background: url('../img/journal_bott.png')	
+	.footer_link
+		width: 180px
+		margin-top: 20px
+	.footer_link img
+		width: 45px
+		height: 45px
+	.footer_link div
+		width: 135px
+		font-size: 12px
+		padding: 9px 30px 9px 11px
+	.footer_socials
+		margin-top: 25px	
+	.footer_social
+		margin: 0 auto
+		margin-right: 0	
+	.footer_social a:not(:first-of-type)
+		margin-left: 20px
+	.footer_left .footer_age,
+	.footer_left .footer_copyright
+		display: block
+	.footer_left .footer_age
+		width: 60px
+		height: 60px
+		line-height: 60px
+		margin: 0
+		margin-right: 10px
+	.footer_left .footer_copyright
+		font-size: 12px				
+@media screen and (min-width: 1366px)	
+	.head
+		max-width: 1366px
+		margin: 0  auto
+	.container
+		width: 1290px	
+	.main
+		max-width: 1366px
+		margin: 0  auto
+	.main_section
+		padding: 0 50px 0		
+	.main_block
+		margin: 0
+		margin-right: 20px
+	.aside_block
+		display: block
+	.aside_block .right_col
+		margin: 0
+		height: 99%	
+	.row_content .right_col
+		display: none	
+	.left_col
+		width: 100%	
+	.items:nth-child(7), 
+	.photos_block:nth-child(3)
+		display: block	
+		margin-right: 0
+	.advice
+		width: 940px
+		margin-right: 0	
+	.news
+		width: 940px	
+	.news_item:last-child
+		display: flex
+		margin-right: 0
+	.gadget
+		display: block
+		margin-right: 0
+	.show_more
+		width: 940px
+	.mobile
+		margin-top: 40px
+	.ad_block
+		display: block	
+	.widget_block
+		margin-top: 40px
+@media (max-width: 650px)
+	.preview_description a, .rubric, .popular_item, .video_title, .item_description a
+		font-size: 20px
+	.preview_title a, .video_title strong, .category
+		font-size: 30px	
+	.preview_info, .items, .popular_block, .video_info
+		padding: 0 20px	
+	.photos_count 
+		left: 20px
+	.play_btn
+		margin-bottom: 50px	
+	.show_more
+		line-height: 1	
+	.footer_text
+		margin: 40px 20px
+		font-size: 12px
+
+		
+			
+
+
+	
+			
+
+
+
+
