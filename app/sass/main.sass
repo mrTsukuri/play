@@ -23,7 +23,10 @@ a
 	font-family: 'Roboto Condensed', sans-serif
 	font-size: 26px
 	line-height: 2
-	color: #fff	
+	color: #fff
+.nav_cont a:hover
+	color: #ff0044
+
 .main_nav
 	position: absolute
 	z-index: 10
@@ -130,6 +133,11 @@ a
 	background-position: center top 
 	background-size: cover
 	position: relative
+.preview:hover .preview_title a,
+.preview:hover .preview_description a,
+.preview .preview_description a:hover,	
+.preview .preview_title a:hover
+	color: #ff0044	
 .preview_top:before	
 	position: absolute
 	top: 0
@@ -223,11 +231,13 @@ a
 	content: ' '
 	width: 30px
 	height: 30px
-	background: #000 url('../img/Icon_zayac_white.png') center no-repeat
+	background: #000 url('../img/icon_zayac_white.png') center no-repeat
 	border-radius: 50%	
 	display: inline-block
 	vertical-align: middle
 	margin: 5px 10px
+.special_link:hover
+	color: #ff0044	
 .row_content
 	margin-top: 40px	
 .popular_block
@@ -297,6 +307,9 @@ a
 	line-height: 1
 .video_title strong
 	font-size: 60px	
+.video:hover .video_title,
+.video .video_title:hover
+	color: #ff0044	
 .items
 	padding: 0 60px 
 	border-bottom: 1px solid #cccccc
@@ -327,7 +340,11 @@ a
 	line-height: 36px
 	color: #000
 .item_description
-	margin-bottom: 25px		
+	margin-bottom: 25px
+.item:hover .item_description a,
+.item .item_description a:hover,
+.item_description a:hover	
+	color: #ff0044			
 .photos_block
 	padding: 0 15px 20px
 	border-bottom: 1px solid #ccc
@@ -370,6 +387,11 @@ a
 	font-size: 32px
 	font-weight: bold
 	color: #fff	
+.photos:hover .photos_count,
+.photos:hover .photos_title a,
+.photos .photos_count:hover,
+.photos .photos_title a:hover
+	color: #ff0044	
 .video_card
 	background-color: #000	
 .video_min
@@ -417,6 +439,8 @@ a
 	background: none
 	border: none
 	padding-bottom: 90px
+.show_more:hover
+	color: #ff0044	
 .ad_block
 	display: none	
 .footer
@@ -447,7 +471,9 @@ a
 	color: #fff
 	font-family: 'Roboto Condensed', sans-serif
 	font-size: 16px
-	line-height: 1.5	
+	line-height: 1.5
+.footer_navigation a:hover
+	color: #ff0044	
 .footer_text
 	font-family: 'Roboto', sans-serif
 	font-size: 20px
@@ -707,7 +733,7 @@ a
 		padding: 11.5px 11px
 		border: none
 	.btn_sub
-		background: url('../img/Btn_dd_list.jpg')
+		background: url('../img/btn_dd_list.jpg')
 		border: none
 		width: 45px
 		height: 45px
