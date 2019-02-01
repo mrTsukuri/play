@@ -1,486 +1,503 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Playboy</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700|Roboto|Roboto+Condensed:300,400|Roboto+Slab:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+    <meta charset="UTF-8">
+    <title>Playboy</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700|Roboto|Roboto+Condensed:300,400|Roboto+Slab:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 </head>
+
 <body>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.2';
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<header class="head">
-		<div class="head_img_block">
-			<img src="img/Layer 49_1.png" srcset="img/Mobile_Banner_main.png 1024w,
-											  img/Layer49_2.png 1366w" class="head_img">
-		</div>
-		<div class="container">
-			<div class="post_header">
-				<button class="menu_btn"><span></span>
-				<span></span>
-				<span></span></button>
-				<div class="logo">
-					<a href="#"><img src="img/Logo_text.png" height="27" width="185"></a>
-				</div>
-				<button class="enter btn"><img src="img/Enter.png"></button>
-				<button class="search btn"><img src="img/Btn_search.png"></button>
-			</div>
-			<nav class="main_nav">
-				<div class="сontainer nav_cont">
-					<div class="greeting_usr">
-						<a href="#"><img src="img/avatar.png"></a>
-						<span>Привет, Вася!</span>
-					</div>
-					<div class="nav">
-						<ul>
-							<li>
-								<a href="#">Девушки</a>
-							</li>
-							<li>
-								<a href="#">Девушки с обложки</a>
-							</li>
-							<li>
-								<a href="#">Playmates</a>
-							</li>
-							<li>
-								<a href="#">Видео</a>
-							</li>
-							<li>
-								<a href="#">CyberClub</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Новости</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Чтиво</a>
-							</li>
-							<li>
-								<a href="#">Интервью</a>
-							</li>
-							<li>
-								<a href="#">Репортаж</a>
-							</li>
-							<li>
-								<a href="#">Гид</a>
-							</li>
-							<li>
-								<a href="#">Фигура</a>
-							</li>
-							<li>
-								<a href="#">Проза</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Мужские игрушки</a>
-							</li>
-							<li>
-								<a href="#">Авто</a>
-							</li>
-							<li>
-								<a href="#">Гаджеты</a>
-							</li>
-							<li>
-								<a href="#">Часы</a>
-							</li>
-							<li>
-								<a href="#">Кухня</a>
-							</li>
-							<li>
-								<a href="#">Бар</a>
-							</li>
-							<li>
-								<a href="#">Путешествия</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Стиль</a>
-							</li>
-							<li>
-								<a href="#">Мода</a>
-							</li>
-							<li>
-								<a href="#">Практикум</a>
-							</li>
-							<li>
-								<a href="#">Несессер</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Развлечения</a>
-							</li>
-							<li>
-								<a href="#">Тесты</a>
-							</li>
-							<li>
-								<a href="#">Анекдоты</a>
-							</li>
-							<li>
-								<a href="#">Конкурсы</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Советчик</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Журнал</a>
-							</li>
-						</ul>
-					</div>	
-				</div>
-			</nav>
-		</div>										  
-	</header>
-	<main class="main">
-		<section class="main_section">
-			<div class= "main_block">
-				<div class="preview preview_top" style="background-image:url('img/Layer50.jpg')">
-					<a href="#" class="preview_link"></a>
-					<div class="preview_info">	
-						<div class="preview_rubric rubric">новости</div>
-						<div class="preview_title"><a href="#">olmeca rise & shine</a></div>
-						<div class="preview_description"><a href="#">15 финалисток поднимутся на сцену главного ночного клуба страны SOHO ROOMS и будут бороться за корону и титул мисс vklube.tv</a></div>
-					</div>
-				</div>
-				<div class="main_category">
-					<a href="#" class="category cat1">журнал</a>
-					<a href="#" class="category cat2">интервью</a>
-					<a href="#" class="category cat3">девушки</a>
-				</div>
-				<div class="special">
-					<a href="#" class="special_link"><strong>Специальное предложение:</strong> подарки от Playboy только для подписчиков журнала!</a>
-				</div>
-				<div class="row_content">
-					<div class="popular_block">
-						<strong>Популярное</strong>
-						<ul>
-							<li class="popular_item"><a href="#">PLAYBOY CASTING CALL</a></li>
-							<li class="popular_item"><a href="#">Playmate года</a></li>
-							<li class="popular_item"><a href="#">На верандах ресторана<br> Sky Lounge</a></li>
-							<li class="popular_item"><a href="#">Bacardi Music GateAway определил 
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header class="head">
+        <div class="head_img_block">
+            <img src="img/headImg.jpg" srcset="img/headImgMobile.jpg  1024w,
+											  img/headImgLarge.jpg 1366w" class="head_img">
+        </div>
+        <div class="container">
+            <div class="post_header">
+                <button class="menu_btn"><span></span>
+                    <span></span>
+                    <span></span></button>
+                <div class="logo">
+                    <a href="#"><img src="img/logo_text.png" height="27" width="185"></a>
+                </div>
+                <button class="enter btn"><img src="img/enter.png"></button>
+                <button class="search btn"><img src="img/btn_search.png"></button>
+            </div>
+            <nav class="main_nav">
+                <div class="сontainer nav_cont">
+                    <div class="greeting_usr">
+                        <a href="#"><img src="img/avatar.png"></a>
+                        <span>Привет, Вася!</span>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="#">Девушки</a>
+                            </li>
+                            <li>
+                                <a href="#">Девушки с обложки</a>
+                            </li>
+                            <li>
+                                <a href="#">Playmates</a>
+                            </li>
+                            <li>
+                                <a href="#">Видео</a>
+                            </li>
+                            <li>
+                                <a href="#">CyberClub</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Чтиво</a>
+                            </li>
+                            <li>
+                                <a href="#">Интервью</a>
+                            </li>
+                            <li>
+                                <a href="#">Репортаж</a>
+                            </li>
+                            <li>
+                                <a href="#">Гид</a>
+                            </li>
+                            <li>
+                                <a href="#">Фигура</a>
+                            </li>
+                            <li>
+                                <a href="#">Проза</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Мужские игрушки</a>
+                            </li>
+                            <li>
+                                <a href="#">Авто</a>
+                            </li>
+                            <li>
+                                <a href="#">Гаджеты</a>
+                            </li>
+                            <li>
+                                <a href="#">Часы</a>
+                            </li>
+                            <li>
+                                <a href="#">Кухня</a>
+                            </li>
+                            <li>
+                                <a href="#">Бар</a>
+                            </li>
+                            <li>
+                                <a href="#">Путешествия</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Стиль</a>
+                            </li>
+                            <li>
+                                <a href="#">Мода</a>
+                            </li>
+                            <li>
+                                <a href="#">Практикум</a>
+                            </li>
+                            <li>
+                                <a href="#">Несессер</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Развлечения</a>
+                            </li>
+                            <li>
+                                <a href="#">Тесты</a>
+                            </li>
+                            <li>
+                                <a href="#">Анекдоты</a>
+                            </li>
+                            <li>
+                                <a href="#">Конкурсы</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Советчик</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Журнал</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main_section">
+            <div class="main_block">
+                <div class="preview preview_top" style="background-image:url('img/previewImg.jpg')">
+                    <a href="#" class="preview_link"></a>
+                    <div class="preview_info">
+                        <div class="preview_rubric rubric">новости</div>
+                        <div class="preview_title"><a href="#">olmeca rise & shine</a></div>
+                        <div class="preview_description"><a href="#">15 финалисток поднимутся на сцену главного ночного клуба страны SOHO ROOMS и будут бороться за корону и титул мисс vklube.tv</a></div>
+                    </div>
+                </div>
+                <div class="main_category">
+                    <a href="#" class="category cat1">журнал</a>
+                    <a href="#" class="category cat2">интервью</a>
+                    <a href="#" class="category cat3">девушки</a>
+                </div>
+                <div class="special">
+                    <a href="#" class="special_link"><strong>Специальное предложение:</strong> подарки от Playboy только для подписчиков журнала!</a>
+                </div>
+                <div class="row_content">
+                    <div class="popular_block">
+                        <strong>Популярное</strong>
+                        <ul>
+                            <li class="popular_item"><a href="#">PLAYBOY CASTING CALL</a></li>
+                            <li class="popular_item"><a href="#">Playmate года</a></li>
+                            <li class="popular_item"><a href="#">На верандах ресторана<br> Sky Lounge</a></li>
+                            <li class="popular_item"><a href="#">Bacardi Music GateAway определил 
 		имена ста счастливчиков</a></li>
-							<li class="popular_item"><a href="#">Тра-та-та какой-то заголовок</a></li>
-							<li class="popular_item"><a href="#">На верандах ресторана<br>Sky Lounge</a></li>
-						</ul>
-					</div>
-					<div class="video_block">
-						<div class="video preview" style="background-image: url('img/video.jpg')">
-							<a href="#" class="video_link">
-								<button class="play_btn"><img src="img/Btn_Play.png"></button>
-								<div class="video_info">
-								<div class="video_rubric rubric">видео</div>
-								<div class="video_title"><strong>Ashley Zeitler</strong> / 1 часть /</div>
-							</div>	
-							</a>
-						</div>
-					</div>
-					<div class="left_col">
-						<div class="items">
-							<div class="item">
-								<a href="#" class="item_img"><img src="img/item1.jpg"></a>
-								<div class="item_info">
-									<div class="item_rubric rubric"><a href="#">фигура</a></div>
-									<div class="item_description"><a href="#">Мик Флитвуд.<br> Все по Барабану</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="items">
-							<div class="item">
-								<a href="#" class="item_img"><img src="img/item2.jpg"></a>
-								<div class="item_info">
-									<div class="item_rubric rubric"><a href="#">конкурс</a></div>
-									<div class="item_description"><a href="#">Фотокункурс PLAYBOY<br>и интернет-сайт hotice.ru</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="photos_block">
-							<div class="photos preview" style="background-image: url('img/photo1.jpg')">
-								<a href="#" class="preview_link"></a>
-								<div class="photos_count">
-									<b>14</b>
-									<span>фото</span>
-								</div>
-								<div class="preview_info">
-									<div class="photos_rubric rubric">обложка</div>
-									<div class="photos_title"><a href="#">Виктория Одинцова</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="items advice">
-							<div class="item_rubric rubric">советчик</div>
-							<div class="item_description"><a href="#">Помогает ли алкоголь от радиации?</a></div>
-						</div>
-						<div class="items video_card">
-							<div class="item">
-								<div class="video_min video preview">
-									<a href="#" class="play_btn">
-										<img src="img/Btn_Play_min.png">
-									</a>
-									<a href="#" class="min_video_preview"><img src="img/minVideo.jpg"></a>
-								</div>
-								<div class="item_info">
-									<div class="rubric video_min_rubric"><a href="#">видео</a></div>
-									<div class="item_description"><a href="#">Ashley Zeilter<br>/ 1 часть /</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="items">
-							<div class="item">
-								<a href="#" class="item_img"><img src="img/item3.jpg"></a>
-								<div class="item_info">
-									<div class="item_rubric rubric"><a href="#">стиль</a></div>
-									<div class="item_description"><a href="#">Как и с чем правельно носить галстук?</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="items">
-							<div class="item">
-								<a href="#" class="item_img"><img src="img/item1.jpg"></a>
-								<div class="item_info">
-									<div class="item_rubric rubric"><a href="#">фигура</a></div>
-									<div class="item_description"><a href="#">Мик Флитвуд.<br> Все по Барабану</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="items news">
-							<div class="item_rubric rubric">новости</div>
-							<div class="news_items">
-								<div class="news_item">
-									<a href="#"><img src="img/news.jpg"></a>
-								    <div class="item_description"><a href="#">Календарь Liqui Moly</a></div>
-								</div>
-								<div class="news_item">
-									<a href="#"><img src="img/news.jpg"></a>
-								    <div class="item_description"><a href="#">Зачем 100 000 людей &laquoпрорычали&raquo</a></div>
-								</div>
-								<div class="news_item">
-									<a href="#"><img src="img/news.jpg"></a>
-								    <div class="item_description"><a href="#">Фитнес c Reebok и Les Mills</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="photos_block">
-							<div class="photos preview" style="background-image: url('img/photo2.jpg')">
-								<a href="#" class="preview_link"></a>
-								<div class="photos_count">
-									<b>07</b>
-									<span>фото</span>
-								</div>
-								<div class="preview_info">
-									<div class="photos_rubric rubric">paymates</div>
-									<div class="photos_title"><a href="#">Александра Тайлер</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="play_cover">
-							<a href="#"><img src="img/playCover.jpg"></a>
-						</div>
-						<div class="items gadget">
-							<div class="item_rubric rubric">гаджеты</div>
-							<div class="item_description"><a href="#">Theranos на анализ. Почему технология Стива Джобса в юбке, возможно, не так уж хороша</a></div>
-						</div>
-						<div class="items advice">
-							<div class="item_rubric rubric">анекдот</div>
-							<div class="item_description"><a href="#">Как и с чем правельно носить галстук?</a></div>
-						</div>
-						<button class="show_more">Показать больше материалов<br>...</button>
-					</div>
-					<div class="right_col">
-						<div class="sticky">
-							<div class="ad_block">
-									<a href="#"><img src="img/ad_block1.jpg"></a>
-								</div>
-								<div class="ad_block">
-									<a href="#"><img src="img/ad_block2.jpg"></a>
-								</div>
-							<div class="sub_block">
-								<div class="sub_text">
-									<strong>еженедельная подборка новостей</strong>
-									<span>Все самое инресное за неделю</span>
-								</div>
-								<form name="email_sub" class="email_sub">
-									<input type="email" name="email" placeholder="Введите ваш e-mail" class="email">
-								<input type="submit" name="submit_sub" class="btn_sub" value="">
-								</form>
-							</div>
-							<div class="ad_block">
-								<a href="#" class="ad_yandex"><img src="img/Yandex.Direct copy.png"></a>
-							</div>
-						</div>	
-					</div>
-				<div class="ad_block">
-					<a href="#"><img src="img/Yandex.Direct_horizontal.png"></a>
-				</div>	
-				<div class="widget_block">
-					<div class="fb-page widg" data-href="https://www.facebook.com/PlayboyRussia" data-width="300" data-height="240" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PlayboyRussia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PlayboyRussia">Журнал Playboy Россия</a></blockquote></div>
-					<div class="inst_widg widg">
-						<div class="thumbnails">
-							<a href="#" class="big item"><img src="img/inst1.jpg"></a>
-							<div class="small_items">
-								<a href="#" class="small item"><img src="img/inst2.jpg"></a>
-								<a href="#" class="small item"><img src="img/inst5.jpg"></a>
-								<a href="#" class="small item"><img src="img/inst3.jpg"></a>
-								<a href="#" class="small item"><img src="img/inst2.jpg"></a>
-							</div>
-						</div>
-						<div class="inst_info">
-						<a href="#">
-							<img src="img/inst_logo.jpg" class="profile">
-						</a>
-							<div class="inst_widg_head">
-							<a href="#">Playboy Россия</a>
-							</div>
-							<span class="counters media">
+                            <li class="popular_item"><a href="#">Тра-та-та какой-то заголовок</a></li>
+                            <li class="popular_item"><a href="#">На верандах ресторана<br>Sky Lounge</a></li>
+                        </ul>
+                    </div>
+                    <div class="video_block">
+                        <div class="video preview" style="background-image: url('img/video.jpg')">
+                            <a href="#" class="video_link">
+                                <button class="play_btn"><img src="img/btn_play.png"></button>
+                                <div class="video_info">
+                                    <div class="video_rubric rubric">видео</div>
+                                    <div class="video_title"><strong>Ashley Zeitler</strong> / 1 часть /</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="left_col">
+                        <div class="items">
+                            <div class="item">
+                                <a href="#" class="item_img"><img src="img/item1.jpg"></a>
+                                <div class="item_info">
+                                    <div class="item_rubric rubric"><a href="#">фигура</a></div>
+                                    <div class="item_description"><a href="#">Мик Флитвуд.<br> Все по Барабану</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <a href="#" class="item_img"><img src="img/item2.jpg"></a>
+                                <div class="item_info">
+                                    <div class="item_rubric rubric"><a href="#">конкурс</a></div>
+                                    <div class="item_description"><a href="#">Фотокункурс PLAYBOY<br>и интернет-сайт hotice.ru</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photos_block">
+                            <div class="photos preview" style="background-image: url('img/photo1.jpg')">
+                                <a href="#" class="preview_link"></a>
+                                <div class="photos_count">
+                                    <b>14</b>
+                                    <span>фото</span>
+                                </div>
+                                <div class="preview_info">
+                                    <div class="photos_rubric rubric">обложка</div>
+                                    <div class="photos_title"><a href="#">Виктория Одинцова</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items advice">
+                            <div class="item_rubric rubric">советчик</div>
+                            <div class="item_description"><a href="#">Помогает ли алкоголь от радиации?</a></div>
+                        </div>
+                        <div class="items video_card">
+                            <div class="item">
+                                <div class="video_min video preview">
+                                    <a href="#" class="play_btn">
+                                        <img src="img/btn_play_min.png">
+                                    </a>
+                                    <a href="#" class="min_video_preview"><img src="img/minVideo.jpg"></a>
+                                </div>
+                                <div class="item_info">
+                                    <div class="rubric video_min_rubric"><a href="#">видео</a></div>
+                                    <div class="item_description"><a href="#">Ashley Zeilter<br>/ 1 часть /</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <a href="#" class="item_img"><img src="img/item3.jpg"></a>
+                                <div class="item_info">
+                                    <div class="item_rubric rubric"><a href="#">стиль</a></div>
+                                    <div class="item_description"><a href="#">Как и с чем правильно носить галстук?</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <a href="#" class="item_img"><img src="img/item1.jpg"></a>
+                                <div class="item_info">
+                                    <div class="item_rubric rubric"><a href="#">фигура</a></div>
+                                    <div class="item_description"><a href="#">Мик Флитвуд.<br> Все по Барабану</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items news">
+                            <div class="item_rubric rubric">новости</div>
+                            <div class="news_items">
+                                <div class="news_item">
+                                    <a href="#"><img src="img/news.jpg"></a>
+                                    <div class="item_description"><a href="#">Календарь Liqui Moly</a></div>
+                                </div>
+                                <div class="news_item">
+                                    <a href="#"><img src="img/news.jpg"></a>
+                                    <div class="item_description"><a href="#">Зачем 100 000 людей &laquoпрорычали&raquo</a></div>
+                                </div>
+                                <div class="news_item">
+                                    <a href="#"><img src="img/news.jpg"></a>
+                                    <div class="item_description"><a href="#">Фитнес c Reebok и Les Mills</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photos_block">
+                            <div class="photos preview" style="background-image: url('img/photo2.jpg')">
+                                <a href="#" class="preview_link"></a>
+                                <div class="photos_count">
+                                    <b>07</b>
+                                    <span>фото</span>
+                                </div>
+                                <div class="preview_info">
+                                    <div class="photos_rubric rubric">paymates</div>
+                                    <div class="photos_title"><a href="#">Александра Тайлер</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="play_cover">
+                            <a href="#"><img src="img/playCover.jpg"></a>
+                        </div>
+                        <div class="items gadget">
+                            <div class="item_rubric rubric">гаджеты</div>
+                            <div class="item_description"><a href="#">Theranos на анализ. Почему технология Стива Джобса в юбке, возможно, не так уж хороша</a></div>
+                        </div>
+                        <div class="items advice">
+                            <div class="item_rubric rubric">анекдот</div>
+                            <div class="item_description"><a href="#">Как и с чем правильно носить галстук?</a></div>
+                        </div>
+                        <button class="show_more">Показать больше материалов
+                            <br>...</button>
+                    </div>
+                    <div class="right_col">
+                        <div class="sticky">
+                            <div class="ad_block">
+                                <a href="#"><img src="img/ad_block1.jpg"></a>
+                            </div>
+                            <div class="ad_block">
+                                <a href="#"><img src="img/ad_block2.jpg"></a>
+                            </div>
+                            <div class="sub_block">
+                                <div class="sub_text">
+                                    <strong>еженедельная подборка новостей</strong>
+                                    <span>Все самое инресное за неделю</span>
+                                </div>
+                                <form name="email_sub" class="email_sub">
+                                    <input type="email" name="email" placeholder="Введите ваш e-mail" class="email">
+                                    <input type="submit" name="submit_sub" class="btn_sub" value="">
+                                </form>
+                            </div>
+                            <div class="ad_block">
+                                <a href="#" class="ad_yandex"><img src="img/yandexDirect.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_block">
+                        <a href="#"><img src="img/yandexDirect_horizontal.png"></a>
+                    </div>
+                    <div class="widget_block">
+                        <div class="fb-page widg" data-href="https://www.facebook.com/PlayboyRussia" data-width="300" data-height="240" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/PlayboyRussia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PlayboyRussia">Журнал Playboy Россия</a></blockquote>
+                        </div>
+                        <div class="inst_widg widg">
+                            <div class="thumbnails">
+                                <a href="#" class="big item"><img src="img/inst1.jpg"></a>
+                                <div class="small_items">
+                                    <a href="#" class="small item"><img src="img/inst2.jpg"></a>
+                                    <a href="#" class="small item"><img src="img/inst5.jpg"></a>
+                                    <a href="#" class="small item"><img src="img/inst3.jpg"></a>
+                                    <a href="#" class="small item"><img src="img/inst2.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="inst_info">
+                                <a href="#">
+                                    <img src="img/inst_logo.jpg" class="profile">
+                                </a>
+                                <div class="inst_widg_head">
+                                    <a href="#">Playboy Россия</a>
+                                </div>
+                                <span class="counters media">
 								<strong>359</strong>
 								фото
 							</span>
-							<span class="counters followed">
+                                <span class="counters followed">
 								<strong>12894</strong>
 								подписчиков
 							</span>
-							<a href="#" class="subscribe">Подписаться</a>
-						</div>
-					</div>
-					<div class="vk_widg widg">
-						<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
-						<!-- VK Widget -->
-						<div id="vk_groups"></div>
-						<script type="text/javascript">
-						VK.Widgets.Group("vk_groups", {mode: 0, width: "300", height: "240", color1: 'FFFFFF', color2: '000000', color3: '000000'}, 24377932);
-						</script>
-					</div>
-				</div>		
-				</div>
-			</div>
-			<div class="aside_block">
-				<div class="right_col">
-						<div class="sticky">
-							<div class="ad_block">
-									<a href="#"><img src="img/ad_block1.jpg"></a>
-								</div>
-								<div class="ad_block">
-									<a href="#"><img src="img/ad_block2.jpg"></a>
-								</div>
-							<div class="sub_block">
-								<div class="sub_text">
-									<strong>еженедельная подборка новостей</strong>
-									<span>Все самое инресное за неделю</span>
-								</div>
-								<form name="email_sub" class="email_sub">
-									<input type="email" name="email" placeholder="Введите ваш e-mail" class="email">
-								<input type="submit" name="submit_sub" class="btn_sub" value="">
-								</form>
-							</div>
-							<div class="mobile">
-								<a href="#"><img src="img/Mobile.png"></a>
-							</div>
-							<div class="ad_block">
-								<a href="#" class="ad_yandex"><img src="img/Yandex.Direct copy.png"></a>
-							</div>
-						</div>	
-					</div>
-			</div>
-		</section>
+                                <a href="#" class="subscribe">Подписаться</a>
+                            </div>
+                        </div>
+                        <div class="vk_widg widg">
+                            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+                            <!-- VK Widget -->
+                            <div id="vk_groups"></div>
+                            <script type="text/javascript">
+                                VK.Widgets.Group("vk_groups", {
+                                    mode: 0,
+                                    width: "300",
+                                    height: "240",
+                                    color1: 'FFFFFF',
+                                    color2: '000000',
+                                    color3: '000000'
+                                }, 24377932);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside_block">
+                <div class="right_col">
+                    <div class="sticky">
+                        <div class="ad_block">
+                            <a href="#"><img src="img/ad_block1.jpg"></a>
+                        </div>
+                        <div class="ad_block">
+                            <a href="#"><img src="img/ad_block2.jpg"></a>
+                        </div>
+                        <div class="sub_block">
+                            <div class="sub_text">
+                                <strong>еженедельная подборка новостей</strong>
+                                <span>Все самое инресное за неделю</span>
+                            </div>
+                            <form name="email_sub" class="email_sub">
+                                <input type="email" name="email" placeholder="Введите ваш e-mail" class="email">
+                                <input type="submit" name="submit_sub" class="btn_sub" value="">
+                            </form>
+                        </div>
+                        <div class="mobile">
+                            <a href="#"><img src="img/mobile.png"></a>
+                        </div>
+                        <div class="ad_block">
+                            <a href="#" class="ad_yandex"><img src="img/yandexDirect.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	</main>
-	<footer class="footer">
-		<div class="footer_container">
-			<div class="footer_block">
-				<div class="footer_left">
-					<div class="footer_logo">
-						<a href="#" class="first_logo">
-							<img src="img/Icon_Zayac_100x152.png">
-						</a>
-						<a href="#" class="second_logo">
-							<img src="img/footer_logo.png">
-						</a>
-					</div>
-					<div class="footer_navigation">
-						<ul>
-							<li><a href="#">Девушки Playboy</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Журнал</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Интервью</a></li>
-							<li><a href="#">События</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Чтиво</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Данные</a></li>
-							<li><a href="#">Стиль</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Советчик</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div>
-					<div class="footer_text">
-						<p>Журнал Playboy издается с 2002 года.<br> Playboy — имя, ставшее легендой. Популярнейший во всем мире глянцевый мужской журнал появился в России в 1995 году и быстро стал самым востребованным изданием в своей категории. Playboy охватывает очень широкий тематический спектр: самые красивые женщины мира, эффектные пикториалы и эксклюзивные съемки знаменитостей, яркие фоторепортажи со светских раутов, впечатляющие рассказы о путешествиях, престижные автомобили, мужская мода и стиль жизни. Интеллектуальная проза, интервью с известными мужчинами — о бизнесе, увлечениях и отношении к жизни. Получать удовольствие, уметь находить во всем приятные стороны — эти главные жизненные ценности, пропагандируемые журналом Playboy, актуальны для мужчин во все времена. Playboy — это стильные фото и публикации о модной литературе, музыке, кино, аудиовидеоновинках, сексе, отношениях, карьере. В каждом номере — девушка месяца и галерея Playboy. Playboy — классический мужской life style журнал!</p>
-					</div>
-					<div class="footer_socials">
-						<div class="footer_age">18+</div>
-						<p class="footer_copyright">&#169 2002-2015, Playboy. <a href="#">Условия использования материалов сайта</a></p>
-						<div class="footer_social">
-						<a href="#">
-							<img src="img/Fb.png">
-						</a>
-						<a href="#">
-							<img src="img/Vk.png">
-						</a>
-						<a href="#">
-							<img src="img/twitter.png">
-						</a>
-						<a href="#">
-							<img src="img/Od.png">
-						</a>
-					</div>
-					</div>
-				</div>	
-				<div class="footer_right">
-					<div class="footer_journal">
-						<div class="footer_journal_wrap">
-							<b class="footer_journal_title">Новый номер</b>
-							<a href="#">
-								<img src="img/footer_img.jpg">
-							</a>
-						</div>	
-					</div>
-					<a href="#" class="footer_link">
-						<img src="img/digital.jpg">
-						<div>Цифровая версия журнала</div>
-					</a>
-					<div class="footer_age">18+</div>
-					<p class="footer_copyright">&#169 2002-2015, Playboy. <a href="#">Условия использования материалов сайта</a></p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script type="text/javascript" src="js/common.js"></script>
+    </main>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_block">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <a href="#" class="first_logo">
+                            <img src="img/iconZayac_100x152.png">
+                        </a>
+                        <a href="#" class="second_logo">
+                            <img src="img/footer_logo.png">
+                        </a>
+                    </div>
+                    <div class="footer_navigation">
+                        <ul>
+                            <li><a href="#">Девушки Playboy</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Журнал</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Интервью</a></li>
+                            <li><a href="#">События</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Чтиво</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Данные</a></li>
+                            <li><a href="#">Стиль</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Советчик</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text">
+                        <p>Журнал Playboy издается с 2002 года.
+                            <br> Playboy — имя, ставшее легендой. Популярнейший во всем мире глянцевый мужской журнал появился в России в 1995 году и быстро стал самым востребованным изданием в своей категории. Playboy охватывает очень широкий тематический спектр: самые красивые женщины мира, эффектные пикториалы и эксклюзивные съемки знаменитостей, яркие фоторепортажи со светских раутов, впечатляющие рассказы о путешествиях, престижные автомобили, мужская мода и стиль жизни. Интеллектуальная проза, интервью с известными мужчинами — о бизнесе, увлечениях и отношении к жизни. Получать удовольствие, уметь находить во всем приятные стороны — эти главные жизненные ценности, пропагандируемые журналом Playboy, актуальны для мужчин во все времена. Playboy — это стильные фото и публикации о модной литературе, музыке, кино, аудиовидеоновинках, сексе, отношениях, карьере. В каждом номере — девушка месяца и галерея Playboy. Playboy — классический мужской life style журнал!</p>
+                    </div>
+                    <div class="footer_socials">
+                        <div class="footer_age">18+</div>
+                        <p class="footer_copyright">&#169 2002-2015, Playboy. <a href="#">Условия использования материалов сайта</a></p>
+                        <div class="footer_social">
+                            <a href="#">
+                                <img src="img/fb.png">
+                            </a>
+                            <a href="#">
+                                <img src="img/vk.png">
+                            </a>
+                            <a href="#">
+                                <img src="img/twitter.png">
+                            </a>
+                            <a href="#">
+                                <img src="img/od.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_journal">
+                        <div class="footer_journal_wrap">
+                            <b class="footer_journal_title">Новый номер</b>
+                            <a href="#">
+                                <img src="img/footer_img.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="footer_link">
+                        <img src="img/digital.jpg">
+                        <div>Цифровая версия журнала</div>
+                    </a>
+                    <div class="footer_age">18+</div>
+                    <p class="footer_copyright">&#169 2002-2015, Playboy. <a href="#">Условия использования материалов сайта</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/common.js"></script>
 </body>
+
 </html>
