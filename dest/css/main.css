@@ -182,7 +182,9 @@ a {
   color: #fff; }
 
 .nav_cont a:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .main_nav {
   position: absolute;
@@ -341,7 +343,9 @@ a {
 .preview:hover .preview_description a,
 .preview .preview_description a:hover,
 .preview .preview_title a:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .preview_top:before {
   position: absolute;
@@ -474,7 +478,9 @@ a {
   margin: 5px 10px; }
 
 .special_link:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .row_content {
   margin-top: 40px; }
@@ -503,7 +509,9 @@ a {
   color: #000; }
 
 .popular_item a:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .video_block {
   background: #000;
@@ -571,7 +579,9 @@ a {
 
 .video:hover .video_title,
 .video .video_title:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .items {
   padding: 0 60px;
@@ -620,7 +630,9 @@ a {
 .item:hover .item_description a,
 .item .item_description a:hover,
 .item_description a:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .photos_block {
   padding: 0 15px 20px;
@@ -678,7 +690,9 @@ a {
 .photos:hover .photos_title a,
 .photos .photos_count:hover,
 .photos .photos_title a:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .video_card {
   background-color: #000; }
@@ -743,7 +757,9 @@ a {
   padding-bottom: 90px; }
 
 .show_more:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .ad_block {
   display: none; }
@@ -791,7 +807,9 @@ a {
   line-height: 1.5; }
 
 .footer_navigation a:hover {
-  color: #ff0044; }
+  color: #ff0044;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease; }
 
 .footer_text {
   font-family: 'Roboto', sans-serif;
@@ -1053,6 +1071,11 @@ a {
     padding: 0;
     left: 0;
     margin-right: 20px; }
+  .news_item:hover .item_description a,
+  .news_item .item_description a:hover {
+    color: #ff0044;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease; }
   .photos_count {
     top: 20px;
     left: 20px; }
